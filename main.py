@@ -3,7 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:abc123@localhost/tododatabase'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://admin:sheri1234@database-1.c1lkivmuigbj.us-east-1.rds.amazonaws.com/tododatabase'
 db = SQLAlchemy(app)
 class tasks(db.Model):
     sr = db.Column(db.Integer, primary_key=True)
