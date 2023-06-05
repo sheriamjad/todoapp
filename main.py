@@ -9,7 +9,6 @@ class tasks(db.Model):
     sr = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String(100), nullable=False)
     description = db.Column(db.String(250), nullable=False)
-
 @app.route('/',methods=['Get','Post'])
 def contacts():
     if (request.method == 'POST'):

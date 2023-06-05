@@ -20,6 +20,12 @@
 		height: 35px;
 		align-items: center;
 	}
+	#title{
+	    align-items: center;
+	}
+	#desc{
+	     align-items: center;
+	}
 
 </style>
 </head>
@@ -27,11 +33,11 @@
 <div class="main">
  		<form name="sentMessage" action = "/" method="post" novalidate>
  		 <p style="font-size:30px;text-align:center;"> To Do List App</p>
- 		 <div>
+ 		 <div id="title">
  		      Title<br><input type="text" name="title" size=90>
  		</div>
  		<br>
- 		<div>
+ 		<div id="desc">
  		       Description<br><input type="text" name="description" size=90>
  		</div>
  		 <br>
